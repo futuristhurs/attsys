@@ -48,16 +48,18 @@ class Member(models.Model):
     school = models.ManyToManyField(School, related_name='school')
 
     def __str__(self):
-        return self.name
+        return self.user.username
 
 class Subtask(models.Model):
     task = models.ForeignKey(Task, related_name='task', on_delete=models.CASCADE)
-    title = models.CharField(Subject, max_length= 200)
+    title = models.CharField( max_length= 200)
     discription = models.TextField()
     member = models.ForeignKey(User, related_name='member', on_delete=models.CASCADE, null=True)
 
+    completed = models.BooleanField(default=False)
+
     def __str__(self):
-        return self.name
+        return self.title
 
 class Chat(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -67,4 +69,4 @@ class Chat(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.body[0:50]
+        return self.body[0:20]
