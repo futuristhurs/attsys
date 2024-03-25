@@ -79,7 +79,9 @@ Let us know if you have any questions!
 
 **License**
 
-(Specify the license under which you are distributing your code)
+
+This project is licensed under the MIT License ( <a/ href='/LICENSE'>link to MIT License OSI<a>).
+
 
 **Authors**
 
