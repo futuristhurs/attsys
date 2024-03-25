@@ -80,11 +80,12 @@ Let us know if you have any questions!
 **License**
 
 
-This project is licensed under the MIT License ([link to MIT License OSI](/LICENSE)).
+This project is licensed under the MIT License ([link to MIT License](/LICENSE)).
 
 
 **Authors**
 
-(List the contributors to the project)
+* Ms. Natasha Ibeh (Documentation)
+* Egbodor Collins (Development)
 
 **Note:**
