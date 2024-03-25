@@ -45,7 +45,7 @@ class Member(models.Model):
     user = models.OneToOneField(User, related_name='user', on_delete=models.SET_NULL, null=True)
     skills = models.TextField(blank=True)
     matric_id = models.CharField(max_length=50, unique=True)
-    school = models.ManyToManyField(School, related_name='school')
+    school = models.ForeignKey(School, on_delete=models.CASCADE, null=True, related_name='school')
 
     def __str__(self):
         return self.user.username
