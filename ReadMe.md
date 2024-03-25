@@ -1,5 +1,3 @@
-Sure, here's a draft README.md file for your internship attendance app:
-
 **Project Name**  (Web Based Students' Industrial Work Experience Scheme Management System)
 
 This project is an internship attendance app that allows employers to manage intern tasks, track work hours, and facilitate communication.
@@ -13,7 +11,7 @@ This project is an internship attendance app that allows employers to manage int
 * **Discussion:** Facilitate communication and collaboration on tasks through discussions.  (Consider adding if you implement this functionality)
 * **Reporting:** Generate reports on intern work hours and task progress. (Consider adding if you plan on including this feature)
 
-**Getting Started**
+*Getting Started*
 
 1. Clone this repository:
    ```bash
