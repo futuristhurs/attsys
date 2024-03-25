@@ -17,7 +17,7 @@ This project is an internship attendance app that allows employers to manage int
 
 1. Clone this repository:
    ```bash
-   [git clone](https://github.com/futuristhurs/attsys)
+   git clone https://github.com/futuristhurs/attsys
    ```
 2. Install required dependencies:
    ```bash
@@ -37,9 +37,45 @@ This project is an internship attendance app that allows employers to manage int
 
 If you plan to include an API for mobile app integration or other functionalities, you can add a section here detailing the API endpoints and how to use them.
 
-**Contributing**
+**Contribution Guidelines**
 
-(Include instructions or guidelines for contributing to the project if applicable)
+We welcome contributions from the community! Here's how you can get involved:
+
+**Getting Started:**
+
+1. **Set up your development environment:**
+   - Make sure you have Python [3.12] installed. We recommend using a virtual environment tool like `venv` or `virtualenv`.
+2. **Fork the repository:**
+   Create a fork of this repository on GitHub.
+3. **Clone your fork:**
+   Clone your forked repository to your local machine.
+4. **Install dependencies:**
+   Install the required dependencies listed in the `requirements.txt` file.
+
+**Code Style:**
+
+We follow the PEP 8 style guide for Python code. We recommend using a code formatter like `autopep8` to ensure consistency.
+
+**Creating a Pull Request:**
+
+1. **Create a new branch:**
+   Create a new branch for your feature or bug fix.
+2. **Write clear commit messages:**
+   Write clear and concise commit messages that describe your changes.
+3. **Run tests (if applicable):**
+   Before submitting a pull request, make sure your changes pass all tests (if applicable).
+4. **Open a pull request:**
+   Open a pull request from your branch to the main branch of the upstream repository.
+
+**Review Process:**
+
+We will review your pull request as soon as possible. We value clear communication and encourage discussion during the review process.
+
+**Additional Notes:**
+
+We particularly welcome contributions that fix bugs, improve documentation, or add new features. 
+
+Let us know if you have any questions!
 
 **License**
 
