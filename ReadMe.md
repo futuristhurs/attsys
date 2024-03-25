@@ -80,7 +80,7 @@ Let us know if you have any questions!
 **License**
 
 
-This project is licensed under the MIT License ( <a/ href='/LICENSE'>link to MIT License OSI<a>).
+This project is licensed under the MIT License ([link to MIT License OSI](/LICENSE)).
 
 
 **Authors**
