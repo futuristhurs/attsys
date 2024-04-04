@@ -24,5 +24,6 @@ urlpatterns = [
     path('', include('base.urls')),
     #path('user/', include('UserM.urls')),
     path('task/', include('task.urls')),
+    path('worklog/', include('worklog.urls')),
 
 ]
