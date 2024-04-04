@@ -42,11 +42,11 @@ class Task(models.Model):
         super().save(*args, **kwargs) 
 
 class Member(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE, related_name='school', null=True)
     user = models.OneToOneField(User, related_name='user', on_delete=models.SET_NULL, null=True)
     skills = models.TextField(blank=True)
     matric_id = models.CharField(max_length=50, unique=True)
-    school = models.OneToOneField(School, on_delete=models.CASCADE, null=True, related_name='school')
-
+    
     def __str__(self):
         return self.user.username
 
