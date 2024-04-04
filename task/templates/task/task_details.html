@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <h1>{{ task.title }}</h1>
+    <p>Created by: {{ task.creator.username }}</p>
+    <p>Description: {{ task.description }}</p>
+    <p>Deadline: {{ task.deadline }}</p>
+    {% if task.completed %}
+        <p>Completed on: {{ task.completed_date }}</p>
+    {% else %}
+        <p>Status: In Progress</p>
+    {% endif %}
+
+    <h2>Participants</h2>
+    <ul>
+        {% for participant in task.participants.all %}
+            <li>{{ participant.username }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Subtasks</h2>
+    <ul>
+        {% for subtask in task.subtask_set.all %}
+            <li>{{ subtask.title }} ({% if subtask.completed %}Completed{% else %}In Progress{% endif %})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'task_update' task.pk %}">Edit Task</a>
+    <a href="{% url 'task_delete' task.pk %}">Delete Task</a>
+
+{% endblock content %}
