@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     # 'UserM.apps.UsermConfig',
     'task.apps.TaskConfig',
+    'worklog.apps.WorkLogConfig',
 
 ]
 
