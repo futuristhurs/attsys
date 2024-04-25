@@ -41,11 +41,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     # 'UserM.apps.UsermConfig',
     'task.apps.TaskConfig',
-<<<<<<< Updated upstream
     'worklog.apps.WorkLogConfig',
-=======
-    'worklog.apps.WorklogConfig',
->>>>>>> Stashed changes
 
 ]
 

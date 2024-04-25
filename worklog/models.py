@@ -1,12 +1,6 @@
 from django.db import models
-<<<<<<< Updated upstream
-from django.utils import timezone
-from task.models import Member
-
-=======
 from django.contrib.auth.models import User
 from task.models import Member
->>>>>>> Stashed changes
 
 # Create your models here.
 
