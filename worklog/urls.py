@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import work_log
+from .views import workLog
 
 urlpatterns = [
-    path('', work_log, name='work_log'),
+    path('', workLog, name='work_log'),
 ]

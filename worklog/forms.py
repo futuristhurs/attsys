@@ -1,7 +1,7 @@
 from django import forms
-from .models import WorkLog
+from .models import workLog
 
 class WorkLogForm(forms.ModelForm):
     class Meta:
-        model = WorkLog
+        model = workLog
         fields = '__all__'

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="student-login" class="login-form active">
+                <h2>Student Login</h2>
+                <input type="text" id="student-matric" placeholder="Matric Number" required>
+                <input type="password" id="student-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p class="switch">Login as Staff?</p>
+            </form>
+
+            <form id="staff-login" class="login-form">
+                <h2>Staff Login</h2>
+                <input type="text" id="staff-id" placeholder="Staff ID" required>
+                <input type="password" id="staff-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p class="switch">Login as Student?</p>
+                <p class="switch admin">Login as Admin?</p>
+            </form>
+
+            <form id="admin-login" class="login-form">
+                <h2>Admin Login</h2>
+                <input type="text" id="admin-username" placeholder="Username" required>
+                <input type="password" id="admin-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

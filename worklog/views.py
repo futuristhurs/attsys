@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required # Import for login requirement (optional)
-from .models import WorkLog
+from .models import workLog
 from .forms import WorkLogForm  # Assuming you have a WorkLogForm defined
 
 @login_required(login_url='login')  # Adjust as needed for authentication
-def work_log(request):
+def workLog(request):
     """
     View function to handle work log entries.
     """
@@ -28,16 +28,16 @@ def work_log(request):
     return render(request, 'work_log/work_log_form.html', context)
 
 @login_required(login_url='login')  # Adjust as needed for authentication
-def work_log_list(request):
+def workLog_list(request):
     """
     View function to list all work log entries for an intern (if applicable) or all entries (for admin).
     """
     current_user = request.user
 
     if current_user.is_authenticated:
-        work_logs = WorkLog.objects.filter(intern=current_user.intern)  # Filter by intern if logged in
+        workLog = workLog.objects.filter(intern=current_user.intern)  # Filter by intern if logged in
     else:
-        work_logs = WorkLog.objects.all()  # Show all entries for admin/unauthenticated users (optional)
+        workLog = workLog.objects.all()  # Show all entries for admin/unauthenticated users (optional)
 
-    context = {'work_logs': work_logs}
+    context = {'work_logs': workLog}
     return render(request, 'work_log/work_log_list.html', context)

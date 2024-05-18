@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#student-permit">Student Permit</a></li>
+                    <li><a href="#activity-log">Activity Log</a></li>
+                    <li><a href="#attendance">Attendance</a></li>
+                    <li><a href="#my-profile">My Profile</a></li>
+                    <li><a href="#log-out">Log Out</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <section id="home" class="content-section active">
+                <h1>Home</h1>
+                <p>Welcome to the Home section of the dashboard.</p>
+                <!-- Add your dummy content here -->
+                <!-- Example: -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida felis vitae nunc pharetra, ut semper odio congue. Integer vehicula tellus in ex mattis sollicitudin.</p>
+            </section>
+
+            <section id="student-permit" class="content-section active">
+                <h1>Student Permit</h1>
+                <p>Welcome to the Home section of the dashboard.</p>
+                <!-- Add your dummy content here -->
+                <!-- Example: -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida felis vitae nunc pharetra, ut semper odio congue. Integer vehicula tellus in ex mattis sollicitudin.</p>
+            </section>
+
+            <section id="activity-log" class="content-section active">
+                <h1>Activity Log</h1>
+                <canvas id="activity-chart"></canvas>
+            </section>
+            
+            <section id="attendance" class="content-section active">
+                <h1>Attendance</h1>
+            
+                <!-- Student Profile Information -->
+                <div id="student-profile">
+                    <h2>Student Profile</h2>
+                    <p>Name: John Doe</p>
+                    <p>Roll Number: ABC123</p>
+                    <p>Class: 10th Grade</p>
+                    <p>Attendance Status: Present</p>
+                    <p>Attendance Percentage: 95%</p>
+                </div>
+            
+                <!-- Attendance Calendar -->
+                <div id="attendance-calendar">
+                    <h2>Attendance Calendar</h2>
+                    <!-- Include calendar here -->
+                    <p>Calendar goes here...</p>
+                </div>
+            
+                <!-- Individual Student Attendance -->
+                <div id="individual-attendance">
+                    <h2>Individual Attendance</h2>
+                    <form>
+                        <label for="student-search">Search Student:</label>
+                        <input type="text" id="student-search" name="student-search">
+                        <button type="submit">Search</button>
+                    </form>
+                    <div id="student-attendance-details">
+                        <!-- Include detailed attendance records here -->
+                        <p>Student attendance details go here...</p>
+                    </div>
+                </div>
+            
+                <!-- Attendance Notifications -->
+                <div id="attendance-notifications">
+                    <h2>Attendance Notifications</h2>
+                    <p>Set up notification settings and alerts here...</p>
+                </div>
+            
+                <!-- Attendance Feedback -->
+                <div id="attendance-feedback">
+                    <h2>Attendance Feedback</h2>
+                    <p>Provide feedback about attendance tracking here...</p>
+                </div>
+            </section>
+            
+            
+
+            <!-- Repeat the same structure for other sections -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="activity-log.js"></script>
+    <script src="chart.js"></script>
+
+</body>
+
+</html>

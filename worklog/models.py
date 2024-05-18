@@ -4,7 +4,7 @@ from task.models import Member
 
 # Create your models here.
 
-class WorkLog(models.Model):
+class workLog(models.Model):
     Member = models.ForeignKey(Member, on_delete=models.CASCADE),
     DateWorked = models.DateField()
     HoursWorked = models.FloatField()

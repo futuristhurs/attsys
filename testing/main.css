@@ -1,0 +1,81 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    height: 100%;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-bottom: 10px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav ul li a.active {
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+#activity-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#activity-list li {
+    margin-bottom: 10px;
+}
+
+/* styles.css */
+
+/* Add styles for the student profile */
+#student-profile {
+    margin-bottom: 20px;
+}
+
+/* Adjust padding for content */
+.content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Adjust margin for list items */
+#activity-list li,
+#student-attendance-details p {
+    margin-bottom: 10px;
+}
