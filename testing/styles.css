@@ -15,6 +15,18 @@ body {
     border-radius: 8px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    width: 300px; /* Adjusted the width to fit the logo and form nicely */
+    text-align: center;
+}
+
+.logo-container {
+    padding: 20px;
+    background-color: #007bff; /* Adjust the background color if needed */
+}
+
+.company-logo {
+    max-width: 100%;
+    height: auto;
 }
 
 .form-container {
@@ -68,4 +80,3 @@ button:hover {
 .switch.admin {
     color: #dc3545;
 }
-

@@ -4,22 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>ATTSYS - Dashboard</title>
+    <link rel="icon" href="images\logo.ico">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/locales-all.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Company Logo">
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#student-permit">Student Permit</a></li>
-                    <li><a href="#activity-log">Activity Log</a></li>
-                    <li><a href="#attendance">Attendance</a></li>
-                    <li><a href="#my-profile">My Profile</a></li>
-                    <li><a href="#log-out">Log Out</a></li>
-                    <li><a href="#support">Support</a></li>
+                    <li><a href="#home" class="active" title="Home"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#student-permit" title="Student Permit"><i class="fas fa-id-card"></i></a></li>
+                    <li><a href="#activity-log" title="Activity Log"><i class="fas fa-chart-bar"></i></a></li>
+                    <li><a href="#attendance" title="Attendance"><i class="fas fa-calendar-check"></i></a></li>
+                    <li id="profile-menu" class="profile-menu">
+                        <a href="#my-profile" title="My Profile"><i class="fas fa-user"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#log-out" id="log-out">Log Out</a></li>
+                            <li><a href="#support">Support</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -62,8 +74,7 @@
                 <!-- Attendance Calendar -->
                 <div id="attendance-calendar">
                     <h2>Attendance Calendar</h2>
-                    <!-- Include calendar here -->
-                    <p>Calendar goes here...</p>
+                    <div id="calendar"></div>
                 </div>
             
                 <!-- Individual Student Attendance -->
@@ -99,9 +110,21 @@
         </div>
     </div>
 
+    <!-- Logout Confirmation Modal -->
+    <div id="logout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Confirm Logout</h2>
+            <p>Are you sure you want to log out?</p>
+            <button id="confirm-logout">Yes, Log Out</button>
+            <button id="cancel-logout">Cancel</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script src="activity-log.js"></script>
-    <script src="chart.js"></script>
+    <script src="chart.js"></script> 
+    <script src="calendar.js"></script>
 
 </body>
 
