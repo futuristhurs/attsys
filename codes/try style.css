@@ -59,12 +59,16 @@ body {
 .main-content {
   flex-grow: 1;
   padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .designer-container {
-  display: flexbox;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(3, 1fr); /* 3 rows */
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the spacing between the cards as needed */
 }
 
 .designer-card {
@@ -72,6 +76,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  flex-basis: calc(50% - 10px); /* Adjust the width of each card as needed */
+  height: 300px; /* Reduced the height of the cards */
 }
 
 .designer-profile {
@@ -125,29 +131,27 @@ body {
   text-align: right;
 }
 
-
-
 .login-button {
-  background-color: rgba(255, 255, 255, 0.5); /* Set the background color to a partially transparent white */
-  color: #333; /* Set the text color to a dark gray */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
   border: none;
   padding: 10px 20px;
-  border-radius: 50px; /* Set the border-radius to 50% to make it round */
+  border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10px;
-  transition: all 0.3s ease; /* Add a smooth transition for hover/focus effects */
-  margin-right: 20px; /* Add some space at the right */
+  transition: all 0.3s ease;
+  margin-right: 20px;
 }
 
 .login-button:hover {
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly increase the opacity on hover */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
-  transform: translateY(-2px); /* Slightly move the button up on hover */
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .login-button:focus {
   outline: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on focus */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
