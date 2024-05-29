@@ -57,11 +57,6 @@ body {
   right: 20px;
 }
 
-
-
-
-
-
 .card-container {
   display: flex;
   justify-content: center;
@@ -121,4 +116,27 @@ input {
 
 .login-link {
   margin-top: 10px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.from-input,
+.to-input {
+  width: 150px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.separator {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
 }

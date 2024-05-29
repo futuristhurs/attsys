@@ -1,0 +1,91 @@
+.get-in-touch {
+    background-color: #2b0543;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: url(abstract-blur-gradient-background-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .get-in-touch h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .contact-info > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info i {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .message-us {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .message-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .message-us p {
+    margin-bottom: 2rem;
+  }
+  /* Sidebar */
+ .sidebar {
+    background-color: #12041a;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 20px;
+    position: absolute;
+      left: 0px;
+      right: 200px;
+  }
+  
+  .sidebar-header {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    color: #ebebeb;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .sidebar-nav li a:hover {
+    background-color: #444;
+  }
+  
+  .sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  

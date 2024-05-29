@@ -9,7 +9,7 @@
 <body>
   <div class="sidebar">
     <div class="sidebar-header">
-      <a href="#" class="logo">Bootstrap 4</a>
+      <a href="#" class="logo">STUDENT</a>
     </div>
     <nav class="sidebar-nav">
       <ul>
@@ -33,15 +33,23 @@
     <div class="login-card">
       <h2 class="hello-text">Student permit form</h2>
       <form>
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="matric no" required>
-        <input type="text" placeholder="reason for departure" required>
-        <input type="text" placeholder="duration" required>
-        <label>
-          <input type="checkbox" name="supervisor" required>
-          Supervisor Approval
-        </label><br>
-        <a href="homepage 1.html"><button type="submit" class="login-button">Login</button></a>
+        <input type="text" placeholder="Reason for departure" required>
+
+        <div class="form-container">
+          <span class="separator">day</span>
+          <input type="text" class="to-input" placeholder="">
+          <span class="separator">to</span>
+          <input type="text" class="to-input" placeholder="">
+        </div>
+        <div class="form-container">
+          <span class="separator">date</span>
+          <input type="date" class="to-input" placeholder="">
+          <span class="separator">to</span>
+          <input type="date" class="to-input" placeholder="">
+        </div>
+
+        <br>
+        <a href="homepage 1.html"><button type="submit" class="login-button">Submit</button></a>
         
       </form>
     </div>
