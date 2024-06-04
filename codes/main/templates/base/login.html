@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attssys Login</title>
+  <link rel="stylesheet" href="{% static 'style/Login.css' %}">
+</head>
+<body>
+  <div class="container">
+
+    <div class="card-container">
+      <div class="card">
+        <h2 class="hello-text">HELLO !!</h2>
+        <form action="" method="post">  {% csrf_token %}
+          <div class="button">
+            <div class="d-grid gap-2 col-4 mx-auto">
+              <div class="button-container">
+                <label for="user_type">Select User Type:</label>
+                <select name="user_type" id="user_type">
+                  <option value="student">Student</option>
+                  <option value="staff">Staff</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="submit-button">Next</button>  </form>
+      </div>
+    </div>
+
+  </div>
+  <script>
+  // Add JavaScript for conditional redirection
+  const form = document.querySelector('form');
+  const userTypeSelect = document.getElementById('user_type');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const selectedUserType = userTypeSelect.value;
+    let redirectUrl; // Declare variable for redirect URL
+
+    if (selectedUserType === 'student') {
+      redirectUrl = '{% url 'student:signup' %}'; // Use URL tag for student signup
+    } else if (selectedUserType === 'staff') {
+      redirectUrl = '{% url 'staff:signup' %}'; // Use URL tag for staff signup
+    } else {
+      // Handle invalid user type (optional)
+    }
+
+    if (redirectUrl) {
+      window.location.href = redirectUrl; // Redirect based on user selection
+    }
+  });
+  </script>
+</body>
+</html>

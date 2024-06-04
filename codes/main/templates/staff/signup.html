@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+ <link rel="stylesheet" href="{% static 'style/s2.css' %}">
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="login-card">
+      <div class="hello-text">Staff Login</div>
+      <form action="{% url 'staff:home' %}" method="post">
+        {% csrf_token %}
+        <label for="username">Staff ID:</label>
+        <input type="text" name="username" id="username" required />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <input type="hidden" name="user_type" value="staff">
+        <button type="submit" class="login-button">Login</button>
+      </form>
+      <div>
+        <div class="button-container">
+        <a href="{% url 'student:signup' %}"></button>Login as Student</a>
+        <br><br>
+        <!-- <a href="somewhere else.html"></button>Login as Admin</a></div> -->
+      <div>
+
+        </div>
+</body>
+</html>
