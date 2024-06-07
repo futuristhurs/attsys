@@ -1,0 +1,20 @@
+<!-- logs/templates/logs/calendar.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'schedule/css/schedule.css' %}">
+    <script src="{% static 'schedule/js/schedule.js' %}"></script>
+</head>
+<body>
+    <h1>Student Attendance Calendar</h1>
+    <div id="calendar">
+        {% for event in events %}
+            <div class="event">
+                <span class="date">{{ event.start }}</span>
+                <span class="title">{{ event.title }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
