@@ -83,9 +83,7 @@ Let us know if you have any questions!
 This project is licensed under the MIT License ([link to MIT License](/LICENSE)).
 
 
-**Authors**
+**Author**
 
-* Ms. Natasha Ibeh (Documentation)
-* Egbodor Collins (Development)
-
+* Ms. Natasha Ibeh
 **Note:**
